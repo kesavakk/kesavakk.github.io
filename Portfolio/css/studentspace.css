@@ -1,3 +1,9 @@
+body {
+  background-color: #fff;
+  font-family: "Istok Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
 #coverimage{
   width:100%;
   height: 600px;
@@ -28,7 +34,7 @@
   padding-top: 15px;
   margin: 0px 20% 0px;
   display: grid;
-  grid-gap: px;
+  grid-gap: 25px;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -86,6 +92,11 @@ table {
 th, td {
     padding: 15px;
   }
+
+iframe{
+  position: absolute;
+  margin-left: 30%;
+}
 
 #process, #competitive, #interview, #brainstorming, #storyboarding, #persona, #rationale, #wireframe, #paperproto, #hifi {
   margin: 0px 20% 0px;
@@ -168,8 +179,45 @@ th, td {
   width: 50%;
   height: auto;
 }
+.name{
+  grid-area: name;
+  align-self: center;
+  justify-self: left;
+}
 
-
+.contact{
+  grid-area: contact;
+  align-self: center;
+  justify-self: center;
+}
+.linkedin{
+  grid-area: linkedin;
+  align-self: center;
+  justify-self: right;
+}
+.facebook{
+  grid-area: facebook;
+  align-self: center;
+  justify-self: right;
+}
+#footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  height:50px;
+  padding: 0px 20% 0px;
+  text-align: center;
+  display: grid;
+  grid-auto-rows: 50px;
+  grid-template-columns: 2fr 3fr 1fr 1fr;
+  grid-template-areas:
+      "name contact linkedin facebook";
+  font-size: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  background: grey;
+  }
 
 
 
