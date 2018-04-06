@@ -454,18 +454,36 @@ p {
 
 
 
+.name{
+  grid-area: name;
+  align-self: center;
+  justify-self: center;
+}
 
-
-
+.contact{
+  grid-area: contact;
+  align-self: center;
+  justify-self: center;
+}
+.linkedin{
+  grid-area: linkedin;
+  align-self: center;
+  justify-self: center;
+}
+.facebook{
+  grid-area: facebook;
+  align-self: center;
+  justify-self: center;
+}
 #footer {
   position: absolute;
   right: 0;
   left: 0;
-  height:75px;
+  height:50px;
   padding: 0px 10% 0px;
   text-align: center;
   display: grid;
-  grid-auto-rows: 35px 35px;
+  grid-auto-rows: 25px 25px;
   grid-template-columns:1fr 1fr;
   grid-template-areas:
       "linkedin facebook"
@@ -476,6 +494,7 @@ p {
   color: black;
   background: grey;
   }
+
 
 #footer a{
   font-size: 11px;
