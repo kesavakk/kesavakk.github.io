@@ -448,13 +448,3 @@ p {
 #footer a:hover{
   color: #E8751A;
 }
-
-a:hover {
-  color: #E8751A;
-}
-
-a:active{
- font-weight: 600;
- text-decoration: underline;
- color: blue;
-}
