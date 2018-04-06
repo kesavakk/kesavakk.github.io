@@ -3,6 +3,11 @@ body {
   font-family: "Istok Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+* {
+   padding:0;
+   margin:0;
+}
+
 
 
 /*  Navigation */
