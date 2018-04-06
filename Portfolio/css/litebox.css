@@ -12,7 +12,7 @@ body {
 #coverimage{
   width:100%;
   height: 600px;
-  background-image: url('../images/sscover.png');
+  background-image: url('../images/oldman.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -225,6 +225,10 @@ iframe{
   }
 
 
+  video {
+    height: auto;
+    vertical-align: middle;
+    width: 100%;}
 
 
 

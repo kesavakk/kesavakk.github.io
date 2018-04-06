@@ -429,6 +429,28 @@ iframe{
   }
 }
 
+.name{
+  grid-area: name;
+  align-self: center;
+  justify-self: center;
+}
+
+.contact{
+  grid-area: contact;
+  align-self: center;
+  justify-self: center;
+}
+.linkedin{
+  grid-area: linkedin;
+  align-self: center;
+  justify-self: center;
+}
+.facebook{
+  grid-area: facebook;
+  align-self: center;
+  justify-self: center;
+}
+
 #footer {
   position: absolute;
   right: 0;
