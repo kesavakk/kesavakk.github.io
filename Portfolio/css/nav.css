@@ -16,7 +16,7 @@ body {
   align-self: center;
   text-align: right;
   font-weight: bold;
-  
+
 }
 .architecture{
   grid-area:architecture;
@@ -69,8 +69,6 @@ body {
 
 .navLinks:hover{
   color: #E8751A;
-
-
 }
 
 
@@ -92,8 +90,10 @@ body {
     grid-column: 1 / 2;
     grid-row: 2/ 3;
     text-align: center;
-
-  }
+    }
+    .portfolio{
+      font-weight: bold;
+    }
   .navwrapper .architecture{
     grid-column: 2 / 3;
     grid-row: 2/ 3;
@@ -119,6 +119,9 @@ body {
     color: black;
     font-weight: 500;
 
+  }
+  .portfolio .navLinks{
+    font-weight: bold;
   }
   .logo{
     justify-self:center;
