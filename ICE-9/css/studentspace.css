@@ -1,0 +1,450 @@
+body {
+  background-color: #fff;
+  font-family: "Istok Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+* {
+   padding:0;
+   margin:0;
+}
+
+
+#coverimage{
+  width:100%;
+  height: 600px;
+  background-image: url('../images/sscover.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.covertext{
+  text-align: right;
+  position: absolute;
+  bottom: 8px;
+  right: 0;
+  font-size: 30px;
+  color: black;
+  font-family: sans-serif;
+  background-color: rgba(255,255,255, 0.5);
+  padding: 10px;
+  width: 100%;
+  padding-right: 20%;
+
+}
+
+#introduction{
+  background: rgba(255,255,255,0.95);
+  padding-top: 15px;
+  margin: 0px 20% 0px;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 1fr 1fr;
+}
+
+h3 {
+  font-family: 'Josefin Slab', serif;
+  font-weight: normal;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom:12px;
+  color: #E8751A;
+
+}
+
+p {
+  padding-left: 10px;
+  padding-right: 18px;
+  text-align: justify;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 24px;
+  margin-top: 30px;
+  padding-bottom: 0;
+}
+.interview1 p, .interview2 p, .interview3 p, .interview4 p {
+
+  text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-left: 12px;
+  padding-bottom: 0;
+}
+
+
+h4 {
+  text-align: center;
+  margin: auto;
+  padding-left: 10px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 48px;
+  margin-top: 30px;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+table, td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: auto;
+}
+
+th, td {
+    padding: 15px;
+  }
+
+iframe{
+  position: absolute;
+  margin-left: 30%;
+}
+
+#process, #competitive, #interview, #brainstorming, #storyboarding, #persona, #rationale, #wireframe, #paperproto, #hifi {
+  margin: 0px 20% 0px;
+}
+
+#interview .interview{
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.interview1{
+  background-color: #F9CE00;
+}
+.interview2{
+  background-color: #F73859;
+}
+.interview3{
+  background-color: #11CBD7;
+}
+.interview4{
+  background-color: #E1EB71;
+}
+
+.interview p{
+  width: 80%;
+  text-align: center;
+}
+
+
+.quotes{
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.quotes p {
+  text-align: center;
+}
+
+#process img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+
+
+#brainstorming img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+
+#storyboarding img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+
+
+#persona img{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 49%;
+  height: auto;
+}
+
+
+#wireframe img{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+}
+.name{
+  grid-area: name;
+  align-self: center;
+  justify-self: center;
+}
+
+.contact{
+  grid-area: contact;
+  align-self: center;
+  justify-self: center;
+}
+.linkedin{
+  grid-area: linkedin;
+  align-self: center;
+  justify-self: center;
+}
+.facebook{
+  grid-area: facebook;
+  align-self: center;
+  justify-self: center;
+}
+#footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  height:50px;
+  padding: 0px 10% 0px;
+  text-align: center;
+  display: grid;
+  grid-auto-rows: 25px 25px;
+  grid-template-columns:1fr 1fr;
+  grid-template-areas:
+      "linkedin facebook"
+      "name contact";
+  font-size: 9px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  background: grey;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:651px)and (max-width: 1000px)  {
+  #introduction{
+    background: rgba(255,255,255,0.95);
+    padding-top: 15px;
+    margin: 0px 20% 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #interview .interview{
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 650px)  {
+  #introduction{
+    background: rgba(255,255,255,0.95);
+    padding-top: 15px;
+    margin: 0px 20% 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #interview .interview{
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    text-align: center;
+  }
+}
+
+
+
+
+.aboutme{
+  grid-area: aboutme;
+  align-self: center;
+  text-align: right;
+}
+.portfolio{
+  grid-area: portfolio;
+  align-self: center;
+  text-align: right;
+
+}
+.architecture{
+  grid-area:architecture;
+  align-self: center;
+  text-align: right;
+  font-weight: bold;
+}
+.logo{
+  grid-area:logo;
+  align-self: center;
+  align-items: center;
+  align-content: flex-start;
+}
+.resume{
+  grid-area: resume;
+  align-self: center;
+  text-align: right;
+}
+
+.logotext{
+  grid-area: Logo;
+  align-self: center;
+  align-self: center;
+  text-align: right;
+}
+
+
+.navwrapper{
+  background: rgba(255,255,255,0.95);
+  padding: 20px 10% 0;
+  display: grid;
+  grid-auto-rows: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+      "logo logo logo portfolio architecture aboutme resume";
+}
+
+.navLinks{
+  font-size: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+.navwrapper {
+ position: fixed;
+ top:0;
+ right: 0;
+ left: 0;
+ z-index: 1000;
+}
+
+.navLinks:hover{
+  color: #E8751A;
+}
+
+
+
+@media only screen and (max-width: 1000px)  {
+  .navwrapper{
+    background: rgba(255,255,255,0.95);
+    padding: 20px 10% 0;
+    display: grid;
+    grid-auto-rows: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .navwrapper .logo{
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    text-align: center;
+    }
+  .navwrapper .portfolio{
+    grid-column: 1 / 2;
+    grid-row: 2/ 3;
+    text-align: center;
+    }
+    .architecture{
+      font-weight: bold;
+    }
+  .navwrapper .architecture{
+    grid-column: 2 / 3;
+    grid-row: 2/ 3;
+    text-align: center;
+
+  }
+  .navwrapper .aboutme{
+    grid-column: 3 / 4;
+    grid-row: 2/ 3;
+    text-align: center;
+
+  }
+  .navwrapper .resume{
+    grid-column: 4 / 5;
+    grid-row: 2/ 3;
+    text-align: center;
+
+  }
+  .navLinks{
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+
+  }
+  .architecture .navLinks{
+    font-weight: bold;
+  }
+  .logo{
+    justify-self:center;
+  }
+}
+
+#footer a{
+  font-size: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+#footer a:hover{
+  color: #E8751A;
+}
+
+
+@media only screen and (max-width: 850px)  {
+
+  .logotext{
+    display:none;
+  }
+}

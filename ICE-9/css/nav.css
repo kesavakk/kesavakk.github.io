@@ -1,0 +1,377 @@
+body {
+  background-color: #fff;
+  font-family: "Istok Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+* {
+   padding:0;
+   margin:0;
+}
+
+
+
+/*  Navigation */
+.aboutme{
+  grid-area: aboutme;
+  align-self: center;
+  text-align: right;
+}
+.portfolio{
+  grid-area: portfolio;
+  align-self: center;
+  text-align: right;
+  font-weight: bold;
+
+}
+.architecture{
+  grid-area:architecture;
+  align-self: center;
+  text-align: right;
+}
+.logo{
+  grid-area:logo;
+  align-self: center;
+  align-items: center;
+  align-content: flex-start;
+}
+.resume{
+  grid-area: resume;
+  align-self: center;
+  text-align: right;
+}
+
+.logotext{
+  grid-area: Logo;
+  align-self: center;
+  align-self: center;
+  text-align: right;
+}
+
+
+.navwrapper{
+  background: rgba(255,255,255,0.95);
+  padding: 20px 10% 0;
+  display: grid;
+  grid-auto-rows: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+      "logo logo logo portfolio architecture aboutme resume";
+}
+
+.navLinks{
+  font-size: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+.navwrapper {
+ position: fixed;
+ top:0;
+ right: 0;
+ left: 0;
+ z-index: 1000;
+}
+
+.navLinks:hover{
+  color: #E8751A;
+}
+
+
+
+@media only screen and (max-width: 1000px)  {
+  .navwrapper{
+    background: rgba(255,255,255,0.95);
+    padding: 20px 10% 0;
+    display: grid;
+    grid-auto-rows: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .navwrapper .logo{
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    text-align: center;
+    }
+  .navwrapper .portfolio{
+    grid-column: 1 / 2;
+    grid-row: 2/ 3;
+    text-align: center;
+    }
+    .portfolio{
+      font-weight: bold;
+    }
+  .navwrapper .architecture{
+    grid-column: 2 / 3;
+    grid-row: 2/ 3;
+    text-align: center;
+
+  }
+  .navwrapper .aboutme{
+    grid-column: 3 / 4;
+    grid-row: 2/ 3;
+    text-align: center;
+
+  }
+  .navwrapper .resume{
+    grid-column: 4 / 5;
+    grid-row: 2/ 3;
+    text-align: center;
+
+  }
+  .navLinks{
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+
+  }
+  .portfolio .navLinks{
+    font-weight: bold;
+  }
+  .logo{
+    justify-self:center;
+  }
+}
+
+/*  tiles */
+.wrapper {
+  display: grid;
+  padding-top: 100px;
+  margin: 0px 10% 0px;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 300px 300px;
+  grid-template-areas:  "studentspace" "litebox" "chc" "ipd" "flourish" "inkpik";
+}
+
+.studentspace{
+  grid-area: studentspace ;
+  background-image: url('../images/ss.png');
+  border: 1px;
+  border-color: #626060;
+  border-style: solid;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 350px;
+  background-size: cover;
+}
+
+
+.litebox{
+/*  background-color: #009688;*/
+  background-image: url('../images/litebox.png');
+  background-position: center;
+  background-size: cover;
+  min-width: 350px;
+  background-repeat: no-repeat;
+  border: 1px;
+  border-color: #626060;
+  border-style: solid;
+}
+
+.chc{
+  background-image: url('../images/chc.png');
+  background-position: center;
+  background-size: cover;
+  min-width: 350px;
+  background-repeat: no-repeat;
+  border: 1px;
+  border-color: #626060;
+  border-style: solid;
+  font-style: normal;
+
+}
+
+
+.ipd{
+  background-image: url('../images/ipd.png');
+  background-position: center;
+  background-size: cover;
+  min-width: 350px;
+  background-repeat: no-repeat;
+  border: 1px;
+  border-color: #626060;
+  border-style: solid;
+  font-style: normal;
+
+
+}
+
+.flourish{
+  background-image: url('../images/flourish.png');
+  background-position: center;
+  background-size: cover;
+  min-width: 350px;
+  background-repeat: no-repeat;
+  border: 1px;
+  border-color: #626060;
+  border-style: solid;
+  font-style: normal;
+
+}
+
+
+
+.inkpik{
+  background-image: url('../images/inkpik.png');
+  background-position: center;
+  background-size: cover;
+  min-width: 350px;
+  background-repeat: no-repeat;
+  border: 1px;
+  border-color: #626060;
+  border-style: solid;
+}
+
+
+
+
+@media only screen and (max-width: 1200px)  {
+  .wrapper {
+    display: grid;
+    padding-top: 100px;
+    margin: 0px 10% 0px;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas:  "studentspace" "litebox" "chc" "ipd" "flourish" "inkpik";
+      }
+}
+
+
+@media only screen and (max-width: 850px)  {
+  .wrapper {
+    display: grid;
+    padding-top: 100px;
+    margin: 0px 10% 0px;
+    grid-gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    grid-template-areas:  "studentspace" "litebox" "chc" "ipd" "flourish" "inkpik";
+  }
+  .logotext{
+    display:none;
+  }
+}
+
+
+/*  About me */
+#aboutme {
+  display: grid;
+  padding-top: 50px;
+  margin: 0px 20% 0px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: auto;
+}
+
+
+/*  footer */
+
+.name{
+  grid-area: name;
+  align-self: center;
+  justify-self: center;
+}
+
+.contact{
+  grid-area: contact;
+  align-self: center;
+  justify-self: center;
+}
+.linkedin{
+  grid-area: linkedin;
+  align-self: center;
+  justify-self: center;
+}
+.facebook{
+  grid-area: facebook;
+  align-self: center;
+  justify-self: center;
+}
+
+h4 {
+  font-family: 'Josefin Slab', serif;
+
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  }
+
+
+
+#wrapper p {
+
+  text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+  padding-bottom: 0;
+  font-weight: normal;
+}
+
+p {
+
+  text-align: justify;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 20px;
+  padding-bottom: 0;
+  font-weight: normal;
+}
+
+
+
+
+
+
+.name{
+  grid-area: name;
+  align-self: center;
+  justify-self: center;
+}
+
+.contact{
+  grid-area: contact;
+  align-self: center;
+  justify-self: center;
+}
+.linkedin{
+  grid-area: linkedin;
+  align-self: center;
+  justify-self: center;
+}
+.facebook{
+  grid-area: facebook;
+  align-self: center;
+  justify-self: center;
+}
+#footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  height:50px;
+  padding: 0px 10% 0px;
+  text-align: center;
+  display: grid;
+  grid-auto-rows: 25px 25px;
+  grid-template-columns:1fr 1fr;
+  grid-template-areas:
+      "linkedin facebook"
+      "name contact";
+  font-size: 9px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  background: grey;
+  }
+
+
+#footer a{
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+#footer a:hover{
+  color: #E8751A;
+}
